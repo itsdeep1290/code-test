@@ -8,8 +8,6 @@ jobs:
         uses: actions/checkout@v2
       - name: list files
         run: |
-          apt install python
-          python hello.py
           pwd
           ls
           git status
