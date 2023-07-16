@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
+        run: |
+          apt install python
         uses: actions/checkout@v2
         run:
           python hello.py
