@@ -5,13 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        run: |
-          apt install python
         uses: actions/checkout@v2
-        run:
-          python hello.py
       - name: list files
         run: |
+          apt install python
+          python hello.py
           pwd
           ls
           git status
